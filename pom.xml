@@ -4,13 +4,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.example</groupId>
+  <groupId>org.BddCucumber</groupId> <!-- Here is Change Project Group Id: org.example to org.BddCucumber  -->
   <artifactId>CucumberBDD_June2021</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>CucumberBDD_June2021</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <!-- <url>http://www.example.com</url> -->  <!-- COMMENT OUT -->
+
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,6 +21,40 @@
 
   <dependencies>
   <!-- deleted junit, version 4.11-->
+    <!-- SELENIUM -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>3.141.59</version>
+    </dependency>
+    <!-- cucumber-java -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>6.11.0</version>
+    </dependency>
+    <!-- cucumber-testng -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-testng</artifactId>
+      <version>6.11.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- DRIVERS -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.0.3</version>
+    </dependency>
+
+    <!-- FAKE DATA -->
+    <dependency>
+      <groupId>com.github.javafaker</groupId>
+      <artifactId>javafaker</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+
   </dependencies>
 
   <build>
