@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.134 s - in TestRunner
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.628 s <<< FAILURE! - in TestRunner
+TestRunner.runScenario["Student should be able to register with valid information", "Optional[Sign up]"](1)  Time elapsed: 9.518 s  <<< FAILURE!
+java.lang.AssertionError: expected [Thank you for sign up] but found [Thank you for sign up, here your id - TTCVhSny]
+

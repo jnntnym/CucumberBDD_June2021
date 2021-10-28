@@ -7,5 +7,5 @@ CMD+A CTL+I
 #How to execute test in CMD
 /Users/jannatulnayeem/
 cd Documents/QA_Automation/GitProject/CucumberBDD_June2021/
-mvn verify -Denv=qa -Dbrowser=ff -Dcucumber.filter.tags="@login"
 mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tags="@signup"
+mvn verify -Denv=qa -Dbrowser=ff -Dcucumber.filter.tags="@login"

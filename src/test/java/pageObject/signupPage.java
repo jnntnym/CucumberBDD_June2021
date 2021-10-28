@@ -130,7 +130,7 @@ public class signupPage extends BrowserSetup {
             String genderValue = genderChoice.getAttribute("value");
             if (genderValue.equalsIgnoreCase("Female")){
                 genderChoice.click();
-                System.out.println(genderChoice.isSelected());  // boolean value return print
+                System.out.println(genderChoice.isSelected());  // boolean value return print true or false
                 }
         }
     }
@@ -148,7 +148,8 @@ public class signupPage extends BrowserSetup {
     // div[@id="success_message"]/div/text() >> "Thank you for sign up, here your id - "
     // HW - COMPLETE THE Signup FORM AND SIGN UP FOR AN USER AND ASSERT "Thank you for sign up" message
      public void getThankYouMessage(){
-      String actualMessage = thankYouMessage.getText().substring(0,21);
+     // String actualMessage = thankYouMessage.getText().substring(0,21);
+      String actualMessage = thankYouMessage.getText();  // Thank you for sign up, here your id - verifying with id-TTC8kKTg
       String expectedMessage = "Thank you for sign up";
       System.out.println(actualMessage);
       Assert.assertEquals(actualMessage, expectedMessage );
