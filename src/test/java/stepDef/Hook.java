@@ -49,11 +49,8 @@ public class Hook extends BrowserSetup {
     }
         // happen after each test
         // what happen if test fails? what you will do for the  failing test case? screenshot? logs? ??
-
         @After
         public void endTest(Scenario scenario) {
-        // happen after each test
-        // what happen if test fails? what you will do for the  failing test case? screenshot? logs? ??
         try {
             if (scenario.isFailed()){
                 final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);

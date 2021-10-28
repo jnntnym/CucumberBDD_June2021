@@ -1,0 +1,126 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-28T19:28:34.361Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5415332000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.startTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Student should be able to register with valid information",
+        "description": "",
+        "id": "sign-up;student-should-be-able-to-register-with-valid-information",
+        "after": [
+          {
+            "result": {
+              "duration": 1639000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.endTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 49241000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at TalentTek Sign in page",
+            "match": {
+              "location": "stepDef.loginStep.iAmAtTalentTekSignInPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 429795000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click Create New Account button in login page",
+            "match": {
+              "location": "stepDef.loginStep.iClickCreateNewAccountButtonInLoginPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2617016000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter valid student information",
+            "match": {
+              "location": "stepDef.signupStep.iEnterValidStudentInformation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87219000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I agree with terms",
+            "match": {
+              "location": "stepDef.signupStep.iAgreeWithTerms()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85311000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on Create My Account button",
+            "match": {
+              "location": "stepDef.signupStep.iClickOnCreateMyAccountButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 159399000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see Thank you for sign up message",
+            "match": {
+              "location": "stepDef.signupStep.iShouldSeeThankYouForSignUpMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@qa"
+          },
+          {
+            "name": "@signup"
+          }
+        ]
+      }
+    ],
+    "name": "Sign up",
+    "description": "",
+    "id": "sign-up",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/signup.feature",
+    "tags": []
+  }
+]

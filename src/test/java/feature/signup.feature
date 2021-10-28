@@ -1,5 +1,5 @@
 Feature: Sign up
-  @qa   @signup
+  @qa @signup
   Scenario: Student should be able to register with valid information
     Given I am at TalentTek Sign in page
     And I click Create New Account button in login page
